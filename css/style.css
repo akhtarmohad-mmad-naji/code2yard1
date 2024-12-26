@@ -1,0 +1,98 @@
+/********** Template CSS **********/
+:root {
+    --primary: #009CFF;
+    --secondary: #777777;
+    --light: #F8F8F8;
+    --dark: #252525;
+}
+** Section Title **
+ .section-title {
+    position: relative !important;
+    display: inline-block !important;
+    text-transform: uppercase !important;
+}
+
+
+
+/*** Facts ***/
+.fact-item {
+    transition: .5s;
+}
+a {
+    color: none !important;
+
+}
+a :hover{
+    color:#2f4451 !important
+}
+
+.fact-item:hover {
+    margin-top: -10px;
+    background: #FFFFFF !important;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+
+/*** Service ***/
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+.service-item:hover {
+    margin-top: -10px;
+    box-shadow: none;
+    border: 1px solid #DEE2E6;
+}
+/*** Feature ***/
+.progress {
+    height: 5px;
+}
+.progress .progress-bar {
+    width: 0px;
+    transition: 3s;
+}
+/*** Project ***/
+.project-item a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 6px;
+    opacity: 0;
+    transition: .5s;
+}
+.project-item:hover a {
+    opacity: 1;
+}
+.project-carousel .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.project-carousel .owl-dot {
+    width: 35px !important;
+    height: 35px !important; 
+    margin: 3px !important;
+    display: flex !important ;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 1px solid #DEE2E6 !important;
+    border-radius: 35px !important;
+    transition: .5s !important;
+}
+.project-carousel .owl-dot:hover,
+.project-carousel .owl-dot.active {
+    color: #FFFFFF;
+    border-color: var(--primary);
+    background: var(--primary);
+}
