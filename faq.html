@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Author: HiBootstrap Theme, Category: IT, Multipurpose, HTML, SASS" />
+        <meta name="description" content="Find answers to common questions about Code2Yard's services, pricing, and processes. Learn how we help businesses thrive with innovative digital solutions." />
 
         <!-- title -->
-        <title>Solit - IT Startup & Business Agency Template</title>
+        <title>Code2Yard FAQ: Answers to Your Digital Solution Questions</title>
 
         <!-- bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -31,6 +31,93 @@
 
         <!-- favicon -->
         <link rel="icon" href="assets/img/logos/favicon.png" type="image/png" sizes="16x16" />
+        <style>
+            /* Anchor Tag Logos */
+            .navbar-brand {
+                text-decoration: none; /* Remove underline */
+                /* font-weight: bold; */
+            }
+    
+            /* Large Logo */
+            .navbar-brand .logo-large {
+                display: inline-flex;
+                align-items: center;
+            }
+    
+            .logo-large .letter-c {
+                color: var(--primary-color, #6610f2); /* Blue for large logo */
+                font-size: 2rem; /* Larger font size for the 'C' */
+                margin-right: 4px;
+                /* font-size: x-large; */
+                font-weight: 600;
+               
+            }
+            .logo-small .letter-c{
+                margin-right: 0.8rem;
+                margin-right: 2px;
+                font-weight: 300;
+
+            }
+    
+            .logo-large .text {
+                color: var(--secondary-color,	#000000); /* Dark gray for text */
+                font-size: 1.3rem; /* Smaller font size for the text */
+                text-transform: lowercase;
+                font-weight: 600;
+                
+                
+            }
+    
+            /* Small Logo */
+            .navbar-brand .logo-small {
+                display: none; /* Hidden by default */
+                align-items: center;
+                display: inline-flex;
+                align-items: center;
+
+            }
+    
+            .logo-small .letter-c {
+                color: var(--primary-color, #6610f2); 
+                font-size: 1.7rem; /* Smaller font size for the 'C' */
+                margin-right: 3px;
+                font-weight: 600;
+            }
+    
+            .logo-small .text {
+                color: var(--secondary-color, #333); /* Dark gray for text */
+                font-size: 0.9rem; /* Smaller font size for the text */
+            }
+    
+            /* Responsive Design */
+            @media (max-width: 991px) {
+                .logo-large {
+                    display: none; /* Hide large logo on smaller screens */
+                }
+    
+                .logo-small {
+                    display: inline-flex; /* Show small logo */
+                }
+                .logo-small .text{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: lowercase;
+                    color: var(--secondary-color,	#000000); /* Dark gray for text */
+                }
+            }
+    
+            @media (min-width: 992px) {
+                .logo-large {
+                    display: inline-flex; /* Show large logo on larger screens */
+                }
+    
+                .logo-small {
+                    display: none; /* Hide small logo on larger screens */
+                }
+            }
+
+        </style>
     </head>
 
     <body>
@@ -38,8 +125,11 @@
         <header class="navbar-area nav-style-two">
             <!-- menu for mobile device -->
             <div class="mobile-nav">
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logos/Logo3.png" alt="logo_light" />
+                <a href="index.html" class="logo"> 
+                    <span class="logo-small">
+                        <span class="letter-c">C</span>
+                        <span class="text text-small">ode2yard</span>
+                    </span>
                 </a>
             </div>
 
@@ -47,9 +137,11 @@
               <div class="main-nav">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="container">
-                        <a class="navbar-br" href="index.html">
-                            <img src="assets/img/logos/Logo3.png" alt="logo_light" />
-                           
+                        <a class="navbar-brand" href="index.html">
+                            <span class="logo-large">
+                                <span class="letter-c">C</span>
+                                <span class="text">ode2yard</span>
+                            </span>
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto">
@@ -162,7 +254,7 @@
                                     <a href="contact.html" class="nav-link">contact</a>
                                 </li>
                             </ul>
-                            <div class="search-item">
+                            <!-- <div class="search-item">
                                 <div class="search-btn">
                                     <i class="open-btn envy envy-magnify-glass"></i>
                                     <i class="close-btn envy envy-close"></i>
@@ -175,7 +267,7 @@
                                         </button>
                                     </form>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- <div class="cta-btn">
                                 <a href="sign-in.html" class="btn btn-solid">
                                     <i class="envy envy-user"></i>
@@ -215,80 +307,74 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="faq-item">
-                            <h4>When should I receive my money?</h4>
-                            <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6">
-                        <div class="faq-item">
-                            <h4>What happens to my data?</h4>
-                            <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6">
-                        <div class="faq-item">
-                            <h4>Why my card payment is failing?</h4>
-                            <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6">
-                        <div class="faq-item">
-                            <h4>What if I pick the wrong plan?</h4>
-                            <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6">
-                        <div class="faq-item">
                             <h4>What happens to my data if I cancel?</h4>
                             <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
+                                <strong>A:</strong> At Code2Yard, we ensure your data remains secure even if you decide to cancel our services. Before termination, we provide you with a complete backup and ensure no residual data is stored without your consent.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <div class="faq-item">
-                            <h4>If I have questions, where?</h4>
+                            <h4>Can I make changes to my website after it’s built?</h4>
                             <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
+                                WAbsolutely! We design websites with flexibility in mind. Whether you need to update content, add features, or tweak design elements, our support team is here to assist, or we can guide you on how to make changes.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <div class="faq-item">
-                            <h4>What is content marketing?</h4>
+                            <h4>What kind of support do you offer post-launch?</h4>
                             <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
+                                Post-launch, Code2Yard provides ongoing support, including bug fixes, updates, and website monitoring. We also offer maintenance packages to keep your website secure, optimized, and up-to-date.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <div class="faq-item">
-                            <h4>Do I need a blog fo research?</h4>
+                            <h4>How long does it take to build a website?</h4>
                             <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
+                                Project timelines vary based on complexity, but most websites take 4–8 weeks. We provide a detailed timeline at the project’s start and keep you updated on milestones throughout the process.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="faq-item">
+                            <h4>Do you provide SEO services for websites?</h4>
+                            <p>
+                                Yes! We incorporate SEO best practices during development and offer advanced SEO services to help your website rank higher, attract more traffic, and generate leads.
+
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="faq-item">
+                            <h4>What happens if I need a redesign in the future?</h4>
+                            <p>
+                                If your needs evolve, Code2Yard is here to help with redesigns. Whether it’s a visual refresh or adding new features, we can ensure your website stays aligned with your goals and brand.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="faq-item">
+                            <h4> How secure will my website be?</h4>
+                            <p>
+                                Security is a top priority at Code2Yard. We implement SSL encryption, regular updates, and secure coding practices to ensure your website is protected against threats and vulnerabilities.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="faq-item">
+                            <h4>What if I need additional features after launch?</h4>
+                            <p>
+                                Adding features is easy with Code2Yard. Whether you need an e-commerce integration, blog section, or custom functionality, our team can seamlessly integrate new features to grow your website.
                             </p>
                         </div>
                     </div>
@@ -312,7 +398,7 @@
                         </div>
                         <div class="about-text-blc">
                             <p>
-                                No more Search. World's No. 1 IT Solution Center for your better secur ity. Loo car boot bodge !
+                                Your trusted partner for web and IT solutions. At Code2Yard, we focus on delivering practical and secure digital services that align with your goals—no fluff, just results you can trust.
                             </p>
                         </div>
                         <div class="row mb-4">
@@ -320,10 +406,9 @@
                                 <div class="about-feature-blc">
                                     <i class="envy envy-quality blue mt-1"></i>
                                     <div class="about-feature-content">
-                                        <h6>The Certified Studio</h6>
+                                        <h6>Our Expertise, Your Advantage</h6>
                                         <p>
-                                            Se one of the world’s largest ITService Providers, our deep pool of over 130 certified engineers and IT support staff are ready to help.
-                                        </p>
+                                            We take pride in our skilled and experienced team. With a pool of highly qualified developers, designers, and IT specialists, Code2Yard ensures that every project is executed with precision and professionalism.                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -331,16 +416,15 @@
                                 <div class="about-feature-blc">
                                     <i class="envy envy-quality red mt-1"></i>
                                     <div class="about-feature-content">
-                                        <h6>Award Ceremony</h6>
+                                        <h6>Client Success Stories</h6>
                                         <p>
-                                            Se one of the world’s largest ITService Providers, our deep pool of over 130 certified engineers and IT support staff are ready to help.
-                                        </p>
+                                            At Code2Yard, our biggest achievement is your success. We’re driven by the positive impact we create for our clients, delivering tangible results that speak louder than any trophy ever could.                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="cta-btn">
-                            <a href="#" class="btn btn-solid">start trial <i class="envy envy-right-arrow"></i></a>
+                            <a href="contact.html" class="btn btn-solid">start now <i class="envy envy-right-arrow"></i></a>
                         </div>
                     </div>
                 </div>
@@ -348,95 +432,122 @@
         </section>
         <!--end about section-->
 
-        <!-- start footer area -->
-        <footer class="footer-area pt-100 pb-70 bg-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <div class="navbar-brand">
-                                <a href="index.html">
-                                    <img src="assets/img/logos/logo_dark.png" alt="image" />
-                                    <img src="assets/img/logos/logo_light.png" alt="image" />
-                                </a>
+                <!-- start footer area -->
+                <footer class="footer-area pt-100 pb-70">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-5 col-sm-6 col-12">
+                                <div class="footer-widget">
+                                    <div class="navbar-brand">
+                                        <a href="index.html">
+                                            <span class="logo-large">
+                                                <span class="letter-c">C</span>
+                                                <span class="text">ode2yard</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <blockquote>
+                                        <p>Grow your business with Code2Yard’s expertise in web development. From custom designs to feature-rich applications, we deliver solutions that support your goals and fuel your success.</p>
+        
+                                    </blockquote>
+                                    <div class="social-link">
+                                        <a href="#" class="bg-tertiary" target="_blank">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="bg-success" target="_blank">
+                                            <i class="fab fa-tumblr"></i>
+                                        </a>
+                                        <a href="#" class="bg-danger" target="_blank">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                        <a href="#" class="bg-info" target="_blank">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#" class="bg-pink" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <p>Grow your business with Code2Yard’s expertise in web development. From custom designs to feature-rich applications, we deliver solutions that support your goals and fuel your success.</p>
-                            <div class="social-link">
-                                <a href="#" class="bg-tertiary" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="bg-success" target="_blank"><i class="fab fa-tumblr"></i></a>
-                                <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
-                                <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="bg-pink" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <div class="col-lg-3 col-md-5 col-sm-6 col-12">
+                                <div class="footer-widget">
+                                    <h5>Our Services</h5>
+                                    <ul class="footer-quick-links">
+                                        <li>
+                                            <a href="services.html">Developing custom websites</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html">Digital marketing</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html">Website mantainance </a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html">SEO(search engin optimizaiotn)</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html">Handling social media</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-6 col-12">
+                                <div class="footer-widget">
+                                    <h5>Other Resources</h5>
+                                    <ul class="footer-quick-links">
+                                        <li>
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="privacy-policy.html">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-5 col-sm-6 col-12">
+                                <div class="footer-widget">
+                                    <h5>Contact info</h5>
+                                    <div class="contact-info">
+                                        <i class="envy envy-pin"></i>
+                                        <p>BTM Layout, Bangalore, India-560076. </p>
+                                    </div>
+                                    <div class="contact-info">
+                                        <i class="envy envy-call"></i>
+                                        <p>
+                                            <a href="tel:+001-548-159-2491">+918767367823 || +918635926138</a>
+                                        </p>
+                                       
+                                    </div>
+                                    <div class="contact-info">
+                                        <i class="fa fa-globe"></i> <!-- Font Awesome Globe Icon -->
+                                        <p>
+                                            <a href="https://www.code2yard.com" >www.code2yard.com</a>
+                                        </p>
+                                    </div>
+                                    <div class="contact-info">
+                                        <i class="envy envy-plane"></i>
+                                        <p>
+                                            <a href="mailTo:code2yard@gmail.com">code2yard@gmail.com</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <h5>Our Services</h5>
-                            <ul class="footer-quick-links">
-                                <li><a href="service-details.html">Interface Design</a></li>
-                                <li><a href="service-details.html">SEO Optimizer</a></li>
-                                <li><a href="service-details.html">Digital Marketing</a></li>
-                                <li><a href="service-details.html">Market Monitor</a></li>
-                                <li><a href="service-details.html">Graphic Design</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <h5>Other Resources</h5>
-                            <ul class="footer-quick-links">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <h5>Contact info</h5>
-                            <div class="contact-info">
-                                <i class="envy envy-pin"></i>
-                                <p>113 Solit, White House, New Jersey, USA</p>
-                            </div>
-                            <div class="contact-info">
-                                <i class="envy envy-call"></i>
-                                <p>
-                                    <a href="tel:+001-548-159-2491">+001-548-159-2491</a>
-                                </p>
-                                <br>
-                                <p>
-                                    <a href="tel:+001-548-159-2492">+001-548-159-2492</a>
-                                </p>
-                            </div>
-                            <div class="contact-info">
-                                <i class="envy envy-plane"></i>
-                                <p>
-                                    <a href="mailTo:hello@solit.com">hello@solit.com</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+                </footer>
         <!-- end footer area -->
 
         <!-- start copy right area -->
-        <!-- <div class="copy-right-area">
-            <div class="container">
-                <div class="copy-right-content">
-                    <p>
-                        Copyright @<script>document.write(new Date().getFullYear())</script> Solit. Designed By
-                        <a href="https://hibootstrap.com/" target="_blank">
-                            HiBootstrap.com
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div> -->
+       
         <!-- end copy right area-->
 
         <!-- jequery JS -->

@@ -615,7 +615,10 @@ img {
 .navbar-area .main-nav {
   position: relative;
   padding: 0;
+
   background: transparent;
+  
+
 }
 
 .navbar-area .main-nav .navbar {
@@ -623,8 +626,8 @@ img {
 }
 
 .navbar-area .main-nav .navbar .navbar-brand img {
-  height: 102px;
-  width: 45px;
+  /* height: 102px;
+  width: 45px; */
   /* display: inline-block; */
 }
 
@@ -894,7 +897,8 @@ img {
 }
 
 .navbar-area.stickyadd {
-  background: #fff;
+  background: transparent;
+  color: white;
   -webkit-animation: slideInDown 500ms ease-in-out 0s normal none 1 running;
   animation: slideInDown 500ms ease-in-out 0s normal none 1 running;
   -webkit-box-shadow: 0 10px 15px rgba(51, 47, 59, 0.1);
@@ -910,13 +914,13 @@ img {
   top: 0;
 }
 
-.navbar-area.stickyadd .main-nav .navbar .navbar-brand img:first-child {
+/* .navbar-area.stickyadd .main-nav .navbar .navbar-brand img:first-child {
   display: none;
-}
+} */
 
-.navbar-area.stickyadd .main-nav .navbar .navbar-brand img:last-child {
+/* .navbar-area.stickyadd .main-nav .navbar .navbar-brand img:last-child {
   display: inline-block;
-}
+} */
 
 .navbar-area.stickyadd .main-nav .navbar .nav-item a {
   padding: 22px 0;
@@ -994,6 +998,7 @@ img {
   Banner Area CSS
 =================================================*/
 .home-banner-area {
+  padding-top: 2%;
   position: relative;
   overflow: hidden;
   background-size: cover;
@@ -1011,11 +1016,24 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  transition: background-image 1s ease-in-out; /* Smooth transition */
+  margin-top: 60px;
 }
 
 .home-banner-area .banner-content {
   z-index: 3;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
 }
+
+.home-banner-area .banner-content.active {
+  z-index: 3;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+
+
 
 .home-banner-area .banner-content h1 {
   color: #fff;
@@ -1032,6 +1050,7 @@ img {
 }
 
 .home-banner-area .banner-content .banner-img {
+
   position: relative;
 }
 
@@ -1049,9 +1068,35 @@ img {
 }
 
 .home-banner-area.banner-type-one {
-  padding-top: 280px;
-  padding-bottom: 200px;
-  background: url("../img/banner/banner_1.png") no-repeat center;
+
+  width: 100%;
+  /* height: 95vh; Adjust height to fit the viewport */
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-size: contain;
+  object-fit: cover; /* Ensure the image covers the container */
+  filter: brightness(70%); 
+  background: url("../img/banner/banner10") no-repeat center;
+
+  background-position: center; /* Centers the image */
+  width: 100%;
+ 
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  filter: brightness(70%);
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .home-banner-area.banner-type-one{
+    height: 90vh; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-banner-area.banner-type-one {
+    height: 80vh; /* Further adjust height for extra-small screens */
+  }
 }
 
 .home-banner-area.banner-type-one::before {
@@ -1943,7 +1988,7 @@ img {
 }
 
 .featured-service-section .container {
-  max-width: 100%;
+  max-width: 100%;  
 }
 
 .featured-service-section .section-title {
@@ -1956,16 +2001,23 @@ img {
 }
 
 .featured-service-section .featured-service-image {
-  background: url(../img/gallery/13.Illustration.png) no-repeat center center;
+  /* background: url(../img/gallery/13.Illustration.png) no-repeat center center;
   background-size: cover;
-  height: 100%;
-  width: 100%;
+  height: 100%; */
+  /* width: 100%; */
   /* max-height: 1000px; Optional: Set a maximum height */
 
 }
+.centered-image {
+  width: 100%; /* Adjust size as needed */
+  max-width: 600px; /* Set a max width to avoid over-scaling */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Make it a block-level element for centering */
+  margin: 0 auto; /* Center horizontally */
+}
 
 .featured-service-section .featured-service-image img {
-  display: none;
+ display: block;
 }
 
 .featured-service-section .featured-service-content {
@@ -4153,15 +4205,15 @@ img {
   margin-bottom: 2em;
 }
 
-.footer-area .footer-widget .navbar-brand {
+/* .footer-area .footer-widget .navbar-brand {
   margin-bottom: 20px;
   margin-top: -10px;
   padding: 0;
-}
+} */
 
-.footer-area .footer-widget .navbar-brand img:last-child {
+/* .footer-area .footer-widget .navbar-brand img:last-child {
   display: none;
-}
+} */
 
 .footer-area .footer-widget h5 {
   text-transform: capitalize;
@@ -4725,10 +4777,10 @@ img {
   box-shadow: 0 0 30px -2px rgba(106, 99, 119, 0.1);
 }
 
-.comingsoon-section .comingsoon-box .logo {
+/* .comingsoon-section .comingsoon-box .logo {
   margin: 0 auto 20px;
   width: 120px;
-}
+} */
 
 .comingsoon-section .comingsoon-box .title-box {
   text-transform: capitalize;
@@ -4892,7 +4944,7 @@ img {
 }
 
 .owl-carousel .owl-nav.disabled + .owl-dots {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .owl-carousel .owl-dots {
@@ -4927,6 +4979,7 @@ img {
   }
   .navbar-area .mobile-nav .logo {
     top: 15px;
+  
   }
   .navbar-area .cta-btn {
     display: none;
@@ -4937,7 +4990,9 @@ img {
   .navbar-area .mobile-nav.mean-container .mean-bar {
     padding: 20px 0 0;
     position: relative;
-    background: transparent;
+    /* background: transparent; */
+    background-color: transparent;
+    color: white;
   }
   .navbar-area .mobile-nav.mean-container .mean-bar .mean-nav {
     float: none;
@@ -4962,12 +5017,12 @@ img {
     width: 30px;
     top: 8px;
   }
-  .navbar-area .mobile-nav.mean-container a.logo img:first-child {
+  /* .navbar-area .mobile-nav.mean-container a.logo img:first-child {
     display: inline-block;
   }
   .navbar-area .mobile-nav.mean-container a.logo img:last-child {
     display: none;
-  }
+  } */
   .navbar-area .search-item {
     position: absolute !important;
     top: 50%;
@@ -4988,20 +5043,20 @@ img {
   .navbar-area.stickyadd .mobile-nav.mean-container .mean-bar {
     -webkit-animation: slideInDown 500ms ease-in-out 0s normal none 1 running;
     animation: slideInDown 500ms ease-in-out 0s normal none 1 running;
-    background: #fff;
+    background: transparent;
   }
   .navbar-area.stickyadd .mobile-nav.mean-container a.meanmenu-reveal {
-    color: #332f3b;
+    color: black !important;
   }
   .navbar-area.stickyadd .mobile-nav.mean-container a.meanmenu-reveal span {
-    background: #332f3b;
+    background: #6610f2;
   }
-  .navbar-area.stickyadd .mobile-nav.mean-container a.logo img:first-child {
+  /* .navbar-area.stickyadd .mobile-nav.mean-container a.logo img:first-child {
     display: none;
-  }
-  .navbar-area.stickyadd .mobile-nav.mean-container a.logo img:last-child {
+  } */
+  /* .navbar-area.stickyadd .mobile-nav.mean-container a.logo img:last-child {
     display: inline-block;
-  }
+  } */
   .navbar-area.stickyadd .mobile-nav.mean-container .search-item .search-btn {
     color: #332f3b;
   }
@@ -5019,6 +5074,11 @@ img {
   }
   .featured-service-section .featured-service-image img {
     display: block;
+    width: 100%;
+    height: auto;
+   
+    text-align: center;
+    
   }
 }
 
@@ -5262,4 +5322,48 @@ img {
   font-weight: bold;
   color: blue;
 } */
+
+/* */
+
+.h2_like_h1 {
+  font-size: 46px; /* Match the font size of an h1 */
+  font-weight: bold; /* h1 tags are usually bold */
+  color: #000; /* Use a prominent color */
+  margin: 20px 0; /* Adjust margin to match h1 spacing */
+  line-height: 1.2; /* Set appropriate line height for h1 look */
+}
+
+
+.responsive-h1 {
+  font-size: 1.5em; /* Default size similar to h2 */
+  margin: 0.67em 0; /* Default margin for h2 */
+}
+
+/* Adjust for smaller devices */
+@media (max-width: 600px) {
+  .responsive-h1 {
+      font-size: 1.2em; /* Smaller font size for small screens */
+  }
+}
+.resize-text-h6 {
+  font-size: 1.2em; /* Larger size for larger screens */
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .resize-text {
+      font-size: 0.8em; /* Smaller size for mobile screens */
+  }
+}
+
+.resize-text-h7 {
+  font-size: 1em; /* Larger size for larger screens */
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .resize-text {
+      font-size: 0.6em; /* Smaller size for mobile screens */
+  }
+}
 

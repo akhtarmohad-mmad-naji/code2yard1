@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Author: HiBootstrap Theme, Category: IT, Multipurpose, HTML, SASS" />
+        <meta name="description" content="Discover Code2Yard—your partner in creating stunning websites, strategic digital marketing, and seamless online management. Elevate your business with tailored solutions that drive growth and make a lasting impact." />
         <!-- title -->
-        <title>Code2yard - IT Startup & Software service Agency</title>
+        <title>Code2Yard: Empowering Your Business with Innovative Digital Solutions</title>
         <!-- bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <!-- fontawesome CSS -->
@@ -27,7 +27,96 @@
         <!-- theme dark CSS -->
         <link rel="stylesheet" href="assets/css/theme-dark.css" />
         <!-- favicon -->
-        <link rel="icon" href="assets/img/logos/favicon.png" type="image/png" sizes="16x16" />
+        
+        <link rel="icon" href="assets/img/logos/logo3.png" type="image/png" sizes="16x16" />
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <style>
+            /* Anchor Tag Logos */
+            .navbar-brand {
+                text-decoration: none; /* Remove underline */
+                /* font-weight: bold; */
+            }
+    
+            /* Large Logo */
+            .navbar-brand .logo-large {
+                display: inline-flex;
+                align-items: center;
+            }
+    
+            .logo-large .letter-c {
+                color: var(--primary-color, #6610f2); /* Blue for large logo */
+                font-size: 2rem; /* Larger font size for the 'C' */
+                margin-right: 4px;
+                /* font-size: x-large; */
+                font-weight: 600;
+               
+            }
+            .logo-small .letter-c{
+                margin-right: 0.8rem;
+                margin-right: 2px;
+                font-weight: 300;
+
+            }
+    
+            .logo-large .text {
+                color: var(--secondary-color,	#000000); /* Dark gray for text */
+                font-size: 1.3rem; /* Smaller font size for the text */
+                text-transform: lowercase;
+                font-weight: 600;
+                
+                
+            }
+    
+            /* Small Logo */
+            .navbar-brand .logo-small {
+                display: none; /* Hidden by default */
+                align-items: center;
+                display: inline-flex;
+                align-items: center;
+
+            }
+    
+            .logo-small .letter-c {
+                color: var(--primary-color, #6610f2); 
+                font-size: 1.7rem; /* Smaller font size for the 'C' */
+                margin-right: 3px;
+                font-weight: 600;
+            }
+    
+            .logo-small .text {
+                color: var(--secondary-color, #333); /* Dark gray for text */
+                font-size: 0.9rem; /* Smaller font size for the text */
+            }
+    
+            /* Responsive Design */
+            @media (max-width: 991px) {
+                .logo-large {
+                    display: none; /* Hide large logo on smaller screens */
+                }
+    
+                .logo-small {
+                    display: inline-flex; /* Show small logo */
+                }
+                .logo-small .text{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: lowercase;
+                    color: var(--secondary-color,	#000000); /* Dark gray for text */
+                }
+            }
+    
+            @media (min-width: 992px) {
+                .logo-large {
+                    display: inline-flex; /* Show large logo on larger screens */
+                }
+    
+                .logo-small {
+                    display: none; /* Hide small logo on larger screens */
+                }
+            }
+
+        </style>
     </head>
     <body>
         <!-- start preloader area-->
@@ -50,7 +139,7 @@
                         <ul class="info-list">
                             <li>
                                 <i class="envy envy-email"></i>
-                                <a href="mailTo:hello@solit.com">code2yard@gmail.com</a>
+                                <a href="mailTo:code2yard.com">code2yard@gmail.com</a>
                             </li>
                             <li><i class="envy envy-wall-clock"></i>24/7: 8.00 am - 7.00 pm</li>
                         </ul>
@@ -79,18 +168,21 @@
             </div>
             <!-- menu for mobile device -->
             <div class="mobile-nav">
-                <a href="index.html" class="logo "><span  class=" text-primary logo-fs-bold">C</span>ode2yard
-                    <!-- <img src="assets/img/logos/logo_light.png" alt="logo_light" />
-                    <img src="assets/img/logos/logo_dark.png" alt="logo-dark" /> -->
+                <a href="index.html" class="logo"> 
+                    <span class="logo-small">
+                        <span class="letter-c">C</span>
+                        <span class="text text-small">ode2yard</span>
+                    </span>
                 </a>
-                
             </div>
             <div class="main-nav">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="container">
-                        <a class="navbar-br" href="index.html">
-                            <img src="assets/img/logos/Logo3.png" alt="logo_light" />
-                           
+                        <a class="navbar-brand" href="index.html">
+                            <span class="logo-large">
+                                <span class="letter-c">C</span>
+                                <span class="text">ode2yard</span>
+                            </span>
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto">
@@ -98,26 +190,27 @@
                                     <a href="index.html" class="nav-link active">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="services.html" class="nav-link">Services</a>
-                                </li>
-                                <li class="nav-item">
                                     <a href="about.html" class="nav-link">About</a>
                                 </li>
-                                <li class="nav-item dropdown">
+                                <li class="nav-item">
+                                    <a href="services.html" class="nav-link">Services</a>
+                                </li>
+                                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                                <!-- <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle">Pages</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
                                         <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
                                         <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
                                         <li class="nav-item"><a href="coming-soon.html" class="nav-link">Coming Soon</a></li>
-                                        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                                        
                                         <li class="nav-item"><a href="terms-condition.html" class="nav-link">Terms & Conditions</a></li>
                                         <li class="nav-item"><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
                                         <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
                                         <li class="nav-item"><a href="error-404.html" class="nav-link">Error Page</a></li>
                                         <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
                                     <a href="blog-grid.html" class="nav-link">Blog</a>
                                 </li>
@@ -125,20 +218,6 @@
                                     <a href="contact.html" class="nav-link">Contact</a>
                                 </li>
                             </ul>
-                            <div class="search-item">
-                                <div class="search-btn">
-                                    <i class="open-btn envy envy-magnify-glass"></i>
-                                    <i class="close-btn envy envy-close"></i>
-                                </div>
-                                <div class="search-overlay search-popup">
-                                    <form class="search-form">
-                                        <input class="search-input" name="search" placeholder="Search" type="text" />
-                                        <button class="btn btn-solid" type="submit">
-                                            <i class="envy envy-magnify-glass"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </nav>
@@ -152,13 +231,13 @@
                 <div class="item">
                     <div class="container">
                         <div class="banner-content">
-                            <h1>Your Trusted Partner in Digital Innovation and Growth</h1>
+                            <h1>Your Trusted Partner in Digital Solutions and Business Growth</h1>
                             <p>
-                                Grow your business with Code2Yard’s expertise in web development. From custom designs to feature-rich applications, we deliver solutions that support your goals and fuel your success.
+                                Grow your business with Code2Yard's expertise in web development. From custom designs to feature-rich applications, we deliver solutions that support your goals and fuel your success.
                             </p>
     
                             <div class="cta-btn">
-                                <a href="../../Solit-html/index.html" class="btn btn-solid">Try now</a>
+                                <a href="contact.html" class="btn btn-solid">Try now</a>
                             </div>
                         </div>
                     </div>
@@ -166,12 +245,27 @@
                 <div class="item">
                     <div class="container">
                         <div class="banner-content">
-                            <h1>Empowering Brands with Cutting-Edge Web Solutions</h1>
+                            <h2 class="h2_like_h1" style="color: white; ">Transforming Ideas into Stunning Digital Experiences</h2>
+                            <p>
+                                At Code2Yard, we do not just build websites; we create immersive online experiences that captivate and engage. Let us turn your concepts into an impressive digital reality.
+                            </p>
+    
+                            <div class="cta-btn">
+                                <a href="contact.html" class="btn btn-solid">Try now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="banner-content">
+                            <h2 class="h2_like_h1" style="color: white;">Empowering Brands with Cutting-Edge Web Solutions</h2>
                             <p>
                                 Code2Yard combines design, functionality, and strategy to bring you high-impact websites. We ensure every element serves a purpose, making your brand shine in the digital world.
                             </p>
+    
                             <div class="cta-btn">
-                                <a href="../../Solit-html/index.html" class="btn btn-solid">Try now</a>
+                                <a href="contact.html" class="btn btn-solid">Try now</a>
                             </div>
                         </div>
                     </div>
@@ -179,12 +273,12 @@
                 <div class="item">
                     <div class="container">
                         <div class="banner-content">
-                            <h1>Transforming Ideas into Stunning Digital Experiences</h1>
+                            <h2 class="h2_like_h1" style="color: white; line-height: 1.5;">Transforming Ideas into Stunning Digital Experiences</h2>
                             <p>
                                 At Code2Yard, we do not just build websites; we create immersive online experiences that captivate and engage. Let us turn your concepts into an impressive digital reality.
                             </p>
                             <div class="cta-btn">
-                                <a href="../../Solit-html/index.html" class="btn btn-solid">Try now</a>
+                                <a href="contact.html" class="btn btn-solid">Try now</a>
                             </div>
                         </div>
                     </div>
@@ -243,35 +337,27 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-sm-12 pb-30">
                         <div class="section-title">
-                            <span class="subtitle">about us</span>
-                            <h2>Crafting Digital Excellence for Every Business</h2>
+                            <span class="subtitle">Code2yard !</span>
+                            <h2>Empowering Businesses with Digital Brilliance</h2>
                         </div>
                         <div class="about-text-blc">
-                            <p>Code2Yard is a dedicated web development agency, passionate about building exceptional digital solutions for brands of all sizes. We specialize in crafting visually engaging, user-friendly websites that don’t just look great—they perform. Our team combines technical expertise with creative vision to turn ideas into immersive online experiences, making each project a powerful tool for growth.</p>
-                            <p>At Code2Yard, we’re committed to innovation, quality, and the success of our clients, taking pride in every line of code and pixel we deliver. Join us on a journey to elevate your brand’s digital presence with impact and purpose.</p>
+                            <p>
+                                Welcome to <strong>Code2Yard</strong>, where we transform your ideas into a thriving digital presence. Whether you’re starting from scratch or looking to enhance your online impact, we offer tailored solutions that make your business stand out. Our innovative approach ensures that your online presence reflects the unique values and goals of your business.</p>
+                            <p>Our team specializes in crafting stunning, user-friendly websites and providing seamless management to ensure your online operations run smoothly. Beyond development, we empower your brand with strategic digital marketing, helping you reach your target audience, grow your business, and leave a lasting impression. With Code2Yard, every detail is handled with precision to deliver a digital experience that drives results.
+
+                            </p>
+                            <p>At Code2Yard, we’re more than just a service provider—we’re your dedicated partner in success. With a commitment to excellence and client satisfaction, we deliver results that exceed expectations. We believe in building long-lasting relationships with our clients by providing consistent, top-quality solutions tailored to their needs.
+
+                            </p>
+                            <p> <strong>Ready to elevate your online presence?</strong> Contact us today and let Code2Yard bring your vision to life. Together, we can create a digital future where your business truly stands out.</p>
+
+                           <!-- <p>This version is concise yet engaging, ideal for a home page where first impressions matter. It includes a welcoming tone, highlights key services, builds trust, and ends with a clear CTA to guide visitors toward taking action.</p> -->
+                             
+
+
+
                         </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="about-feature-blc">
-                                    <i class="envy envy-quality blue"></i>
-                                    <div class="about-feature-content">
-                                        <h6>Customized Web Solutions</h6>
-                                        <p>At Code2Yard, we provide unique, tailored web solutions designed to highlight each client’s distinct brand and goals. We turn visions into digital realities that truly stand out.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="about-feature-blc">
-                                    <i class="envy envy-quality red"></i>
-                                    <div class="about-feature-content">
-                                        <h6>Recognized Industry Leaders
-                                        </h6>
-                                        <p>Code2Yard is proud to be recognized for excellence and reliability. Our commitment to quality has earned us the trust of clients and accolades within the industry.</p>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="cta-btn">
                             <a href="about.html" class="btn btn-solid">
                                 Read more
@@ -315,9 +401,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-sm-12 col-md-12 pb-30">
-                        <div class="featured-service-image">
-                            <!-- <iframe src="/assets/img/gallery/4.htm" class="iframe-style"></iframe> -->
-                            <img src="assets/img/gallery/service-4.jpg" alt="service_illustration" />
+                        <div class="featured-service-image" >
+                         <img src="assets/img/gallery/lotit12.png"  class="centered-image"alt="office_image" />
+                 
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 col-md-12">
@@ -325,43 +411,43 @@
                             <div class="section-title">
                                 <span class="subtitle">OUR SERVICES</span>
                                 <h2>Tailored Web Solutions for Your Business Success</h2>
-                                <p>Code2Yard crafts digital experiences that drive results. From design to development, we build websites that are tailored to your unique business needs.</p>
+                                <p>
+                                    Code2Yard creates digital experiences that deliver impactful results. From concept to execution, we design and develop websites customized to meet the specific needs of your business, offering the following features:</p>
                             </div>
                             <div class="row">
                                 <div class="content-inner col-lg-6 col-md-6 col-sm-6">
                                     <i class="envy envy-shield"></i>
-                                    <h5>UI/UX Design</h5>
-                                    <p>User-centered designs that are intuitive and visually appealing.
-
-                                    </p>
-                                    <a href="service-details.html" target="_blank" class="btn btn-text-only">
+                                    <h5>Custom Website Design</h5>
+                                    <p>Creating high-performance, scalable websites that work seamlessly on all devices and adapt as your business expands.</p>
+                                    
+                                    <a href="how-a-website-can-transform-your-business-grow.html" class="btn btn-text-only">
                                         read more
                                         <i class="envy envy-right-arrow"></i>
                                     </a>
                                 </div>
                                 <div class="content-inner col-lg-6 col-md-6 col-sm-6">
                                     <i class="envy envy-cpu"></i>
-                                    <h5>E-Commerce Solutions</h5>
-                                    <p>Seamless online stores that engage and convert customers.</p>
-                                    <a href="service-details.html" target="_blank" class="btn btn-text-only">
+                                    <h5>Creative Design</h5>
+                                    <p>Designing unique, attention-grabbing visuals that reflect your brand and engage users effectively.</p>
+                                    <a href="how-a-website-can-transform-your-business-grow.html"  class="btn btn-text-only">
                                         read more
                                         <i class="envy envy-right-arrow"></i>
                                     </a>
                                 </div>
                                 <div class="content-inner col-lg-6 col-md-6 col-sm-6">
                                     <i class="envy envy-code"></i>
-                                    <h5>Mobile-Responsive Design</h5>
-                                    <p>Optimized for all devices to keep your brand accessible anywhere.</p>
-                                    <a href="service-details.html" target="_blank" class="btn btn-text-only">
+                                    <h5>Digital Marketing & Strategy</h5>
+                                    <p>Helping your website get noticed with SEO and marketing strategies that drive real results.</p>
+                                    <a href="what-is-social-media-and-how-social-media-marketing-can-skyrocket-your-business-growth.html"  class="btn btn-text-only">
                                         read more
                                         <i class="envy envy-right-arrow"></i>
                                     </a>
                                 </div>
                                 <div class="content-inner col-lg-6 col-md-6 col-sm-6">
                                     <i class="envy envy-global"></i>
-                                    <h5>Performance Optimization</h5>
-                                    <p>Fast, efficient websites that ensure smooth user experiences.</p>
-                                    <a href="service-details.html" target="_blank" class="btn btn-text-only">
+                                    <h5>Maintenance & Support</h5>
+                                    <p>Keeping your website secure and up-to-date with ongoing support and improvements.</p>
+                                    <a href="what-is-hosting-and-email-marketing-and-how-can-they-propel-your-business-to-success.html"  class="btn btn-text-only">
                                         read more
                                         <i class="envy envy-right-arrow"></i>
                                     </a>
@@ -372,8 +458,7 @@
                 </div>
             </div>
             <div class="shape">
-                <!-- <img src="assets/img/resource/Illustration_Cloud.png" alt="shape" class="shape-inner" />
-                <img src="assets/img/resource/Illustration_Settings.png" alt="shape" class="shape-inner" /> -->
+
             </div>
         </section>
         <!--end service section-->
@@ -390,81 +475,81 @@
                 <div class="team-slider owl-carousel">
                     <div class="team-item">
                         <div class="team-image">
-                            <img src="assets/img/team/team_1.jpg" alt="team-member" />
+                            <img src="assets/img/team/Nalin Sharma .jpeg" alt="Nalin Sharma " />
                         </div>
                         <div class="team-content">
                             <h5>
-                                <a href="#">Rosalina</a>
+                                <a href="#">Nalin Sharma</a>
                             </h5>
                             <p class="mb-2">CEO & Founder</p>
                             <div class="social-link">
                                 <a href="#" class="bg-success" target="_blank"><i class="fab fa-tumblr"></i></a>
                                 <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
-                                <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/nalin-sharma-iitr-iiml/?originalSubdomain=in" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="team-item">
                         <div class="team-image">
-                            <img src="assets/img/team/team_2.jpg" alt="team-member" />
+                            <img src="assets/img/team/Ashwin M.jpeg" alt="Ashwin M" />
                         </div>
                         <div class="team-content">
                             <h5>
-                                <a href="#">Fiona Endley</a>
+                                <a href="#">Ashwin M</a>
                             </h5>
-                            <p class="mb-2">Ul/UX Designer</p>
+                            <p class="mb-2">Frontend developer</p>
                             <div class="social-link">
                                 <a href="#" class="bg-success" target="_blank"><i class="fab fa-tumblr"></i></a>
                                 <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
-                                <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/ashwinm-045/?originalSubdomain=in " class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="team-item">
                         <div class="team-image">
-                            <img src="assets/img/team/team_3.jpg" alt="team-member" />
+                            <img src="assets/img/team/shekib.jpeg" alt="Meet Bhaavsar" />
                         </div>
                         <div class="team-content">
                             <h5>
-                                <a href="#">Billy Vogel</a>
+                                <a href="#">Shekib jaghori</a>
                             </h5>
-                            <p class="mb-2">Front End Developer</p>
+                            <p class="mb-2">Digital marketer </p>
                             <div class="social-link">
                                 <a href="#" class="bg-success" target="_blank"><i class="fab fa-tumblr"></i></a>
                                 <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
-                                <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/meetbhaavsar/?originalSubdomain=in" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="team-item">
                         <div class="team-image">
-                            <img src="assets/img/team/team_4.jpg" alt="team-member" />
+                            <img src="assets/img/team/FALGUNI SAXENA.jpeg" alt="FALGUNI SAXENA" />
                         </div>
                         <div class="team-content">
                             <h5>
-                                <a href="#">Jane Anderson</a>
+                                <a href="#">FALGUNI SAXENA</a>
                             </h5>
-                            <p class="mb-2">Digital Marketer</p>
+                            <p class="mb-2">Software enginyeer</p>
                             <div class="social-link">
                                 <a href="#" class="bg-success" target="_blank"><i class="fab fa-tumblr"></i></a>
                                 <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
-                                <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/falguni-saxena-662484127/" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="team-item">
                         <div class="team-image">
-                            <img src="assets/img/team/team_1.jpg" alt="team-member" />
+                            <img src="assets/img/team/Varinder Singh.jpeg" alt="Varinder Singh" />
                         </div>
                         <div class="team-content">
                             <h5>
-                                <a href="#">Rosalina</a>
+                                <a href="#">Varinder Singh</a>
                             </h5>
-                            <p class="mb-2">CEO & Founder</p>
+                            <p class="mb-2">Graphic designer</p>
                             <div class="social-link">
                                 <a href="#" class="bg-success" target="_blank"><i class="fab fa-tumblr"></i></a>
                                 <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
-                                <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/varindersinghnegi/" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -478,7 +563,7 @@
             <div class="container">
                 <div class="section-title title-light">
                     <span class="subtitle">INTRO VIDEO</span>
-                    <h2>Discover How Code2Yard Works as a Team</h2>
+                    <h2>Discover more about us</h2>
                     <p>Explore how Code2Yard’s teamwork drives innovative solutions, meeting the demands of complex B2B marketing with precision and expertise.</p>
                    </div>
                 <div class="video-content">
@@ -486,6 +571,7 @@
                         <figure class="video-image">
                             <img style="width: 100%; border-radius: 10px;" src="assets/img/background/intro_video.png" alt="video" />
                         </figure>
+                        
                         <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="youtube-popup video-btn">
                             <i class="fas fa-play"></i>
                         </a>
@@ -505,7 +591,8 @@
             <div class="container">
                 <div class="section-title">
                     <span class="subtitle">TESTIMONIALS</span>
-                    <h2>What Code2Yard Offers</h2>
+                    <h2>Real Results with Code2Yard.
+                    </h2>
                     <p>Code2Yard provides cutting-edge software services that simplify complex workflows and help businesses navigate the digital landscape with ease and efficiency.</p>
 
                 </div>
@@ -520,13 +607,13 @@
                         <img src="assets/img/clients/client_3.png" alt="client-3" />
                     </div>
                     <div class="dot">
-                        <img src="assets/img/clients/client_4.png" alt="client-4" />
+                        <img src="assets/img/clients/client_4.jpeg" alt="client-4" />
                     </div>
                     <div class="dot">
                         <img src="assets/img/clients/client_5.png" alt="client-5" />
                     </div>
                     <div class="dot">
-                        <img src="assets/img/clients/client_6.png" alt="client-5" />
+                        <img src="assets/img/clients/client_4.png" alt="client-5" />
                     </div>
                     <div class="testimonial-slider owl-carousel">
                         <div class="slider-item">
@@ -665,18 +752,18 @@
                     <div class="col-lg-4 col-md-6 col-sm-6" id="blog1">
                         <div class="blog-item-single">
                             <div class="blog-item-img">
-                                <a href="blog-details.html?blog=blog1">
-                                    <img src="assets/img/blog/blog_1.png" alt="blog-bg-image" />
+                                <a href="how-a-website-can-transform-your-business-grow.html">
+                                    <img src="assets/img/blog/1/websiteresizedBlog.jpg" alt="blog-bg-image" />
                                 </a>
-                                <p class="tag">Design</p>
+                                <p class="tag">Development</p>
                             </div>
                             <div class="blog-item-content">
-                                <span> <i class="envy envy-calendar"></i>August 31, 2021 </span>
-                                <a href="blog-details.html?blog=blog1">
-                                    <h3>Content Tools & Techniques are complex</h3>
+                                <span> <i class="envy envy-calendar"></i>August 31, 2022 </span>
+                                <a href="how-a-website-can-transform-your-business-grow.html">
+                                    <h3>How a Website Can Transform Your Business Growth ?</h3>
                                 </a>
-                                <p>Strategy experience and analytical expert is combine to enable. Strate great experience.</p>
-                                <a href="blog-details.html?blog=blog1" target="_self" class="btn btn-text-only">
+                                <p>In today’s fast-paced digital landscape, having a robust online presence is essential. </p>
+                                <a href="how-a-website-can-transform-your-business-grow.html" target="_self" class="btn btn-text-only">
                                     read more
                                     <i class="envy envy-right-arrow"></i>
                                 </a>
@@ -686,18 +773,18 @@
                     <div class="col-lg-4 col-md-6 col-sm-6" id="blog2">
                         <div class="blog-item-single">
                             <div class="blog-item-img">
-                                <a href="blog-details.html?blog=blog2">
-                                    <img src="assets/img/blog/blog_2.png" alt="blog-bg-image" />
+                                <a href="what-is-market-research-and-how-it-helps-your-business-grow.html">
+                                    <img src="assets/img/blog/1/Market-research.jpg" alt="blog-bg-image" />
                                 </a>
-                                <p class="tag">Development</p>
+                                <p class="tag">Brand</p>
                             </div>
                             <div class="blog-item-content">
                                 <span> <i class="envy envy-calendar"></i>May 01, 2021 </span>
-                                <a href="blog-details.html?blog=blog2">
-                                    <h3>Use the Mobile App Typography</h3>
+                                <a href="what-is-market-research-and-how-it-helps-your-business-grow.html">
+                                    <h3>What is Market Research and How It Helps Your Business Grow</h3>
                                 </a>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin</p>
-                                <a href="blog-details.html?blog=blog2" target="_self" class="btn btn-text-only">
+                                <p>In a fast-paced business environment, where trends shift rapidly and competition grows, market research stands out as a vital asset.</p>
+                                <a href="what-is-market-research-and-how-it-helps-your-business-grow.html" target="_self" class="btn btn-text-only">
                                     read more
                                     <i class="envy envy-right-arrow"></i>
                                 </a>
@@ -707,18 +794,18 @@
                     <div class="col-lg-4 col-md-6 col-sm-6" id="blog3">
                         <div class="blog-item-single">
                             <div class="blog-item-img">
-                                <a href="blog-details.html?blog=blog3">
-                                    <img src="assets/img/blog/blog_3.png" alt="blog-bg-image" />
+                                <a href="what-is-seo-and-backlinks-and-how-can-they-help-your-business-grow.html">
+                                    <img src="assets/img/blog/1/seoResized.jpg" alt="blog-bg-image" />
                                 </a>
                                 <p class="tag">Brand</p>
                             </div>
                             <div class="blog-item-content">
                                 <span> <i class="envy envy-calendar"></i>July 31, 2021 </span>
-                                <a href="blog-details.html?blog=blog3">
-                                    <h3>Agencies Can Successfully Recover</h3>
+                                <a href="what-is-seo-and-backlinks-and-how-can-they-help-your-business-grow.html">
+                                    <h3>What is SEO & Backlinks, and How Can They Help Your Business Grow?</h3>
                                 </a>
-                                <p>Strategy experience and analytical expert is combine to enable. Strate great experience and analysis the content.</p>
-                                <a href="blog-details.html?blog=blog3" target="_self" class="btn btn-text-only">
+                                <p>In this era of digital dominance, simply having a website isn’t enough. To truly thrive, your business must shine amidst the endless expanse of the internet. </p>
+                                <a href="what-is-seo-and-backlinks-and-how-can-they-help-your-business-grow.html" target="_self" class="btn btn-text-only">
                                     read more
                                     <i class="envy envy-right-arrow"></i>
                                 </a>
@@ -795,11 +882,16 @@
                         <div class="footer-widget">
                             <div class="navbar-brand">
                                 <a href="index.html">
-                                    <img src="assets/img/logos/Lo" alt="image" />
-                                    <!-- <img src="assets/img/logos/logo_dark.jpg" alt="image" /> -->
+                                    <span class="logo-large">
+                                        <span class="letter-c">C</span>
+                                        <span class="text">ode2yard</span>
+                                    </span>
                                 </a>
                             </div>
-                            <p>Grow your business with Code2Yard’s expertise in web development. From custom designs to feature-rich applications, we deliver solutions that support your goals and fuel your success.</p>
+                            <blockquote>
+                                <p>Grow your business with Code2Yard’s expertise in web development. From custom designs to feature-rich applications, we deliver solutions that support your goals and fuel your success.</p>
+
+                            </blockquote>
                             <div class="social-link">
                                 <a href="#" class="bg-tertiary" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
@@ -824,19 +916,19 @@
                             <h5>Our Services</h5>
                             <ul class="footer-quick-links">
                                 <li>
-                                    <a href="service-details.html">Interface Design</a>
+                                    <a href="services.html">Developing custom websites</a>
                                 </li>
                                 <li>
-                                    <a href="service-details.html">SEO Optimizer</a>
+                                    <a href="services.html">Digital marketing</a>
                                 </li>
                                 <li>
-                                    <a href="service-details.html">Digital Marketing</a>
+                                    <a href="services.html">Website mantainance </a>
                                 </li>
                                 <li>
-                                    <a href="service-details.html">Market Monitor</a>
+                                    <a href="services.html">SEO(search engin optimizaiotn)</a>
                                 </li>
                                 <li>
-                                    <a href="service-details.html">Graphic Design</a>
+                                    <a href="services.html">Handling social media</a>
                                 </li>
                             </ul>
                         </div>
@@ -845,20 +937,14 @@
                         <div class="footer-widget">
                             <h5>Other Resources</h5>
                             <ul class="footer-quick-links">
-                                <li>
-                                    <a href="about.html">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="pricing.html">Pricing</a>
-                                </li>
-                                <li>
-                                    <a href="privacy-policy.html">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="services.html">Services</a>
-                                </li>
+                                <li><a href="testimonials.html" >Testimonials</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
                                 <li>
                                     <a href="contact.html">Contact Us</a>
+                                </li>
+                                <li><a href="terms-condition.html" >Terms & Conditions</a></li>
+                                <li>
+                                    <a href="privacy-policy.html">Privacy Policy</a>
                                 </li>
                             </ul>
                         </div>
@@ -868,22 +954,27 @@
                             <h5>Contact info</h5>
                             <div class="contact-info">
                                 <i class="envy envy-pin"></i>
-                                <p>113 Solit, White House, New Jersey, USA</p>
+                                
+                                    <p>BTM Layout, Bangalore, India-560076. </p>
+                                
                             </div>
                             <div class="contact-info">
                                 <i class="envy envy-call"></i>
                                 <p>
-                                    <a href="tel:+001-548-159-2491">+001-548-159-2491</a>
+                                    <a href="tel:+001-548-159-2491">+918767367823 || +918635926138</a>
                                 </p>
-                                <br>
+                               
+                            </div>
+                            <div class="contact-info">
+                                <i class="fa fa-globe"></i> <!-- Font Awesome Globe Icon -->
                                 <p>
-                                    <a href="tel:+001-548-159-2492">+001-548-159-2492</a>
+                                    <a href="https://www.code2yard.com" >www.code2yard.com</a>
                                 </p>
                             </div>
                             <div class="contact-info">
                                 <i class="envy envy-plane"></i>
                                 <p>
-                                    <a href="mailTo:hello@solit.com">hello@solit.com</a>
+                                    <a href="mailTo:code2yard.com">code2yard@gmail.com</a>
                                 </p>
                             </div>
                         </div>
@@ -893,24 +984,9 @@
         </footer>
         <!-- end footer area -->
 
-        <!-- start copy right area -->
-        <!-- <div class="copy-right-area">
-            <div class="container">
-                <div class="copy-right-content">
-                    <p>
-                        Copyright @<script>document.write(new Date().getFullYear())</script> Solit. Designed By
-
-                        <a href="https://hibootstrap.com/" target="_blank">
-                            HiBootstrap.com
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div> -->
         <!-- end copy right area-->
         
         <!-- jequery JS -->
-        <script src="assets/js/jquery.min.js"></script>
         <!-- jequery JS -->
         <script src="assets/js/jquery.min.js"></script>
         <!-- bootstrap JS -->
@@ -930,6 +1006,14 @@
         <!-- main JS -->
         <script src="assets/js/main.js"></script>
         <script src="/script.js"></script>
+        <script src="test.js"></script>
         <script src="blog.js"></script>
+        <script>
+            // Toggle between light and dark mode
+            document.body.addEventListener("click", () => {
+                document.body.classList.toggle("dark");
+                document.body.classList.toggle("light");
+            });
+        </script>
     </body>
 </html>

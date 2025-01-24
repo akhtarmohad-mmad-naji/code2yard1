@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Author: HiBootstrap Theme, Category: IT, Multipurpose, HTML, SASS" />
+        <meta name="description" content="Reach out to Code2Yard today! Connect with us for expert digital solutions, personalized support, and answers to your inquiries. We're here to help your business thrive." />
 
         <!-- title -->
-        <title>Solit - IT Startup & Business Agency Template</title>
+        <title>Contact Code2Yard: Let's Build Your Digital Success Together</title>
 
         <!-- bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -31,6 +31,99 @@
 
         <!-- favicon -->
         <link rel="icon" href="assets/img/logos/favicon.png" type="image/png" sizes="16x16" />
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script src="mail.js"></script>
+        <style>
+            /* Anchor Tag Logos */
+            .navbar-brand {
+                text-decoration: none; /* Remove underline */
+                /* font-weight: bold; */
+            }
+    
+            /* Large Logo */
+            .navbar-brand .logo-large {
+                display: inline-flex;
+                align-items: center;
+            }
+    
+            .logo-large .letter-c {
+                color: var(--primary-color, #6610f2); /* Blue for large logo */
+                font-size: 2rem; /* Larger font size for the 'C' */
+                margin-right: 4px;
+                /* font-size: x-large; */
+                font-weight: 600;
+               
+            }
+            .logo-small .letter-c{
+                margin-right: 0.8rem;
+                margin-right: 2px;
+                font-weight: 300;
+
+            }
+    
+            .logo-large .text {
+                color: var(--secondary-color,	#000000); /* Dark gray for text */
+                font-size: 1.3rem; /* Smaller font size for the text */
+                text-transform: lowercase;
+                font-weight: 600;
+                
+                
+            }
+    
+            /* Small Logo */
+            .navbar-brand .logo-small {
+                display: none; /* Hidden by default */
+                align-items: center;
+                display: inline-flex;
+                align-items: center;
+
+            }
+    
+            .logo-small .letter-c {
+                color: var(--primary-color, #6610f2); 
+                font-size: 1.7rem; /* Smaller font size for the 'C' */
+                margin-right: 3px;
+                font-weight: 600;
+            }
+    
+            .logo-small .text {
+                color: var(--secondary-color, #333); /* Dark gray for text */
+                font-size: 0.9rem; /* Smaller font size for the text */
+            }
+    
+            /* Responsive Design */
+            @media (max-width: 991px) {
+                .logo-large {
+                    display: none; /* Hide large logo on smaller screens */
+                }
+    
+                .logo-small {
+                    display: inline-flex; /* Show small logo */
+                }
+                .logo-small .text{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: lowercase;
+                    color: var(--secondary-color,	#000000); /* Dark gray for text */
+                }
+            }
+    
+            @media (min-width: 992px) {
+                .logo-large {
+                    display: inline-flex; /* Show large logo on larger screens */
+                }
+    
+                .logo-small {
+                    display: none; /* Hide small logo on larger screens */
+                }
+            }
+
+        </style>
+      
+                                                              
+      
+
     </head>
 
     <body>
@@ -38,18 +131,22 @@
         <header class="navbar-area nav-style-two">
             <!-- menu for mobile device -->
             <div class="mobile-nav">
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logos/logo_light.png" alt="logo_light" />
-                    <!-- <img src="assets/img/logos/logo_dark.png" alt="logo-dark" /> -->
+                <a href="index.html" class="logo"> 
+                    <span class="logo-small">
+                        <span class="letter-c">C</span>
+                        <span class="text text-small">ode2yard</span>
+                    </span>
                 </a>
             </div>
              <!-- menu for desktop device-->
              <div class="main-nav">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="container">
-                        <a class="navbar-br" href="index.html">
-                            <img src="assets/img/logos/Logo3.png" alt="logo_light" />
-                           
+                        <a class="navbar-brand" href="index.html">
+                            <span class="logo-large">
+                                <span class="letter-c">C</span>
+                                <span class="text">ode2yard</span>
+                            </span>
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto">
@@ -162,7 +259,7 @@
                                     <a href="contact.html" class="nav-link active" >contact</a>
                                 </li>
                             </ul>
-                            <div class="search-item">
+                            <!-- <div class="search-item">
                                 <div class="search-btn">
                                     <i class="open-btn envy envy-magnify-glass"></i>
                                     <i class="close-btn envy envy-close"></i>
@@ -175,7 +272,7 @@
                                         </button>
                                     </form>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- <div class="cta-btn">
                                 <a href="sign-in.html" class="btn btn-solid">
                                     <i class="envy envy-user"></i>
@@ -272,7 +369,7 @@
                             </div>
                             <div class="contact-info">
                                 <i class="envy envy-pin"></i>
-                                <p>#82,29th Main, 23rd Cross. BTM layout 2nd, Bangalore, India
+                                <p>#82,29th Main, 23rd Cross, BTM layout 2nd, Bangalore, India
 
                                 </p>
                             </div>
@@ -282,14 +379,18 @@
                                     <a href="tel:+001-548-159-2491">+916362545404 || +918767367821</a>
                                 </p>
                                 <br>
-                                <!-- <p>
-                                    <a href="tel:+001-548-159-2492">+918767367821</a>
-                                </p> -->
+                            
+                            </div>
+                            <div class="contact-info">
+                                <i class="fa fa-globe"></i> <!-- Font Awesome Globe Icon -->
+                                <p>
+                                    <a href="https://www.code2yard.com" >www.code2yard.com</a>
+                                </p>
                             </div>
                             <div class="contact-info">
                                 <i class="envy envy-plane"></i>
                                 <p>
-                                    <a href="mailTo:hello@solit.com">code2yard@gmail.com</a>
+                                    <a href="mailTo:code2yard@gmail.com">code2yard@gmail.com</a>
                                 </p>
                             </div>
                         </div>
@@ -308,92 +409,126 @@
             </div>
         </section>
 
-        <!-- start footer area -->
-        <footer class="footer-area pt-100 pb-70">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <div class="navbar-brand">
-                                <a href="index.html">
-                                    <img src="assets/img/logos/logo_dark.png" alt="image" />
-                                    <img src="assets/img/logos/logo_light.png" alt="image" />
-                                </a>
-                            </div>
-                            <p>Grow your business with Code2Yard’s expertise in web development. From custom designs to feature-rich applications, we deliver solutions that support your goals and fuel your success.</p>
-                            <div class="social-link">
-                                <a href="#" class="bg-tertiary" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="bg-success" target="_blank"><i class="fab fa-tumblr"></i></a>
-                                <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
-                                <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="bg-pink" target="_blank"><i class="fab fa-instagram"></i></a>
+               <!-- start footer area -->
+               <footer class="footer-area pt-100 pb-70">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-5 col-sm-6 col-12">
+                            <div class="footer-widget">
+                                <div class="navbar-brand">
+                                    <a href="index.html">
+                                        <span class="logo-large">
+                                            <span class="letter-c">C</span>
+                                            <span class="text">ode2yard</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <blockquote>
+                                    <p>Grow your business with Code2Yard’s expertise in web development. From custom designs to feature-rich applications, we deliver solutions that support your goals and fuel your success.</p>
+    
+                                </blockquote>
+                                <div class="social-link">
+                                    <a href="#" class="bg-tertiary" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="bg-success" target="_blank">
+                                        <i class="fab fa-tumblr"></i>
+                                    </a>
+                                    <a href="#" class="bg-danger" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="#" class="bg-info" target="_blank">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="bg-pink" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <h5>Our Services</h5>
-                            <ul class="footer-quick-links">
-                                <li><a href="service-details.html">Interface Design</a></li>
-                                <li><a href="service-details.html">SEO Optimizer</a></li>
-                                <li><a href="service-details.html">Digital Marketing</a></li>
-                                <li><a href="service-details.html">Market Monitor</a></li>
-                                <li><a href="service-details.html">Graphic Design</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <h5>Other Resources</h5>
-                            <ul class="footer-quick-links">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <h5>Contact info</h5>
-                            <div class="contact-info">
-                                <i class="envy envy-pin"></i>
-                                <p>#82,29th Main, 23rd Cross. BTM layout 2nd, Bangalore, India</p>
+                        <div class="col-lg-3 col-md-5 col-sm-6 col-12">
+                            <div class="footer-widget">
+                                <h5>Our Services</h5>
+                                <ul class="footer-quick-links">
+                                    <li>
+                                        <a href="services.html">Developing custom websites</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">Digital marketing</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">Website mantainance </a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">SEO(search engin optimizaiotn)</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">Handling social media</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="contact-info">
-                                <i class="envy envy-call"></i>
-                                <p>
-                                    <a href="tel:+001-548-159-2491">+916362545404 || +918767367821</a>
-                                </p>
-                                <br>
-                                <!-- <p>
-                                    <a href="tel:+001-548-159-2492"></a>
-                                </p> -->
+                        </div>
+                        <div class="col-lg-3 col-md-5 col-sm-6 col-12">
+                            <div class="footer-widget">
+                                <h5>Other Resources</h5>
+                                <ul class="footer-quick-links">
+                                    <li>
+                                        <a href="about.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="pricing.html">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="privacy-policy.html">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="contact-info">
-                                <i class="envy envy-plane"></i>
-                                <p>
-                                    <a href="mailTo:hello@solit.com">code2yard@gmail.com</a>
-                                </p>
+                        </div>
+                        <div class="col-lg-3 col-md-5 col-sm-6 col-12">
+                            <div class="footer-widget">
+                                <h5>Contact info</h5>
+                                <div class="contact-info">
+                                    <i class="envy envy-pin"></i>
+                                    <p>BTM Layout, Bangalore, India-560076. </p>
+                                </div>
+                                <div class="contact-info">
+                                    <i class="envy envy-call"></i>
+                                    <p>
+                                        <a href="tel:+001-548-159-2491">+918767367823 || +918635926138</a>
+                                    </p>
+                                   
+                                </div>
+                                <div class="contact-info">
+                                    <i class="fa fa-globe"></i> <!-- Font Awesome Globe Icon -->
+                                    <p>
+                                        <a href="https://www.code2yard.com" >www.code2yard.com</a>
+                                    </p>
+                                </div>
+                                <div class="contact-info">
+                                    <i class="envy envy-plane"></i>
+                                    <p>
+                                        <a href="mailTo:code2yard@gmail.com">code2yard@gmail.com</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
         <!-- end footer area -->
 
         <!-- start copy right area -->
         <!-- <div class="copy-right-area">
             <div class="container">
                 <div class="copy-right-content">
-                    <p>
-                        Copyright @<script>document.write(new Date().getFullYear())</script> Solit. Designed By
-                        <a href="https://hibootstrap.com/" target="_blank">
-                            HiBootstrap.com
-                        </a>
-                    </p>
+                    
+                    
                 </div>
             </div>
         </div> -->
@@ -419,5 +554,6 @@
         <script src="assets/js/jquery.ajaxchimp.min.js"></script>
         <!-- main JS -->
         <script src="assets/js/main.js"></script>
+      
     </body>
 </html>

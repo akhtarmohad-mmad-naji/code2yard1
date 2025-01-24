@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Author: HiBootstrap Theme, Category: IT, Multipurpose, HTML, SASS">
+    <meta name="description" content="Stay tuned! Code2Yard is working on something amazing to enhance your digital experience. Check back soon for exciting updates and innovative solutions.">
 
     <!-- title -->
-    <title>Solit - IT Startup & Business Agency Template</title>
+    <title>Coming Soon - Exciting Updates from Code2Yard</title>
 
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -30,6 +30,93 @@
 
     <!-- favicon -->
     <link rel="icon" href="assets/img/logos/favicon.png" type="image/png" sizes="16x16" />
+    <style>
+        /* Anchor Tag Logos */
+        .navbar-brand {
+            text-decoration: none; /* Remove underline */
+            /* font-weight: bold; */
+        }
+
+        /* Large Logo */
+        .navbar-brand .logo-large {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .logo-large .letter-c {
+            color: var(--primary-color, #6610f2); /* Blue for large logo */
+            font-size: 2rem; /* Larger font size for the 'C' */
+            margin-right: 4px;
+            /* font-size: x-large; */
+            font-weight: 600;
+           
+        }
+        .logo-small .letter-c{
+            margin-right: 0.8rem;
+            margin-right: 2px;
+            font-weight: 300;
+
+        }
+
+        .logo-large .text {
+            color: var(--secondary-color,	#000000); /* Dark gray for text */
+            font-size: 1.3rem; /* Smaller font size for the text */
+            text-transform: lowercase;
+            font-weight: 600;
+            
+            
+        }
+
+        /* Small Logo */
+        .navbar-brand .logo-small {
+            display: none; /* Hidden by default */
+            align-items: center;
+            display: inline-flex;
+            align-items: center;
+
+        }
+
+        .logo-small .letter-c {
+            color: var(--primary-color, #6610f2); 
+            font-size: 1.7rem; /* Smaller font size for the 'C' */
+            margin-right: 3px;
+            font-weight: 600;
+        }
+
+        .logo-small .text {
+            color: var(--secondary-color, #333); /* Dark gray for text */
+            font-size: 0.9rem; /* Smaller font size for the text */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 991px) {
+            .logo-large {
+                display: none; /* Hide large logo on smaller screens */
+            }
+
+            .logo-small {
+                display: inline-flex; /* Show small logo */
+            }
+            .logo-small .text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-transform: lowercase;
+                color: var(--secondary-color,	#000000); /* Dark gray for text */
+            }
+        }
+
+        @media (min-width: 992px) {
+            .logo-large {
+                display: inline-flex; /* Show large logo on larger screens */
+            }
+
+            .logo-small {
+                display: none; /* Hide small logo on larger screens */
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -37,13 +124,20 @@
     <section class="comingsoon-section">
         <div class="container">
             <div class="comingsoon-box">
-                <div class="logo">
-                    <img src="assets/img/logos/logo_dark.png" alt="logo">
+             
+                    <div class="mobile-nav">
+                        <a href="index.html" class="logo"> 
+                            <span class="logo-small">
+                                <span class="letter-c">C</span>
+                                <span class="text text-small">ode2yard</span>
+                            </span>
+                        </a>
+                    
                 </div>
                 <!-- Title Box -->
                 <div class="title-box">
                     <h2>coming soon</h2>
-                    <div class="text">Replenish him third creature and meat blessed void a fruit</div>
+                    <div class="text">Exciting things are on the horizon at Code2Yard! We’re crafting something innovative to elevate your digital experience. Stay tuned for updates!</div>
                 </div>
                 <div id="timer" class="flex-wrap d-flex justify-content-center">
                     <div id="days" class="align-items-center flex-column d-flex justify-content-center"></div>

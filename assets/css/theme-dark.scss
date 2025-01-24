@@ -225,10 +225,10 @@ $card-bg: #0e0e0e;
                     .navbar-brand {
                         img {
                             &:first-child {
-                                display: block;
+                                // display: block;
                             }
                             &:last-child {
-                                display: none;
+                                // display: none;
                             }
                         }
                     }
@@ -394,10 +394,10 @@ $card-bg: #0e0e0e;
             .navbar-brand {
                 img {
                     &:first-child {
-                        display: none;
+                        // display: none;
                     }
                     &:last-child {
-                        display: block;
+                        // display: block;
                     }
 
                 }
