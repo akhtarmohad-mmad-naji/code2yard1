@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://code2yard.netlify.app/sitemap.xml
