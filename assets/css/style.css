@@ -5343,7 +5343,7 @@ img {
 }
 @media (max-width: 600px) {
   .h2_like_h1 {
-    font-size: 16px; /* Match the font size of an h1 */
+    font-size: 18px; /* Match the font size of an h1 */
     font-weight: bold; /* h1 tags are usually bold */
     color: #000; /* Use a prominent color */
     margin: 10px 0; /* Adjust margin to match h1 spacing */
