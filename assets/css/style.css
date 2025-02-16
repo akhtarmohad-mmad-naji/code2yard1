@@ -1097,6 +1097,15 @@ img {
   .home-banner-area.banner-type-one {
     height: 80vh; /* Further adjust height for extra-small screens */
   }
+  .stickyadd .logo span {
+    color: rgb(11, 11, 11) !important;
+  }
+}
+#whatsapp {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1999;
 }
 
 .home-banner-area.banner-type-one::before {
@@ -5331,6 +5340,15 @@ img {
   color: #000; /* Use a prominent color */
   margin: 20px 0; /* Adjust margin to match h1 spacing */
   line-height: 1.2; /* Set appropriate line height for h1 look */
+}
+@media (max-width: 600px) {
+  .h2_like_h1 {
+    font-size: 16px; /* Match the font size of an h1 */
+    font-weight: bold; /* h1 tags are usually bold */
+    color: #000; /* Use a prominent color */
+    margin: 10px 0; /* Adjust margin to match h1 spacing */
+    line-height: 1.5; /* Set appropriate line height for h1 look */
+  }
 }
 
 
