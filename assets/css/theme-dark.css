@@ -5,6 +5,18 @@
   z-index: 9999;
 }
 
+@media only screen and (max-width: 767px) {
+  .switch-box {
+    position: fixed;
+    bottom: 15px;
+    right: 50%;
+    z-index: 9999;
+  }
+
+
+}
+
+
 .switch-box .slider {
   position: absolute;
   cursor: pointer;

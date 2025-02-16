@@ -4868,7 +4868,7 @@ img {
 .go-top {
   position: fixed;
   top: 50%;
-  right: 3%;
+  right: 2.5%;
   opacity: 0;
   cursor: pointer;
   text-decoration: none;
@@ -4886,9 +4886,9 @@ img {
 }
 
 .go-top.active {
-  top: 95%;
-  -webkit-transform: translateY(-95%);
-  transform: translateY(-95%);
+  top: 88%;
+  -webkit-transform: translateY(-88%);
+  transform: translateY(-88%);
   opacity: 1;
   visibility: visible;
 }
