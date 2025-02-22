@@ -965,7 +965,11 @@ img {
 }
 
 .navbar-area.nav-style-two.stickyadd {
-  background: #fff;
+
+  background: rgba(255, 255, 255, 0.2); /* White with 20% opacity */
+  backdrop-filter: blur(10px); /* Blurs the background behind it */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  color: black; /* Ensure text remains visible */
 }
 
 .navbar-area.nav-style-two.stickyadd .cta-btn .btn-outline {
@@ -1098,7 +1102,7 @@ img {
     height: 80vh; /* Further adjust height for extra-small screens */
   }
   .stickyadd .logo span {
-    color: rgb(11, 11, 11) !important;
+    /* color: rgb(11, 11, 11) !important; */
   }
 }
 #whatsapp {

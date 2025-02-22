@@ -120,8 +120,8 @@
   color: #ffffff;
 }
 
-.theme-dark span {
-  /* color: #ffffff !important; */
+.theme-dark span .text-small {
+  color: #ffffff !important;
 }
 
 .theme-dark p {
@@ -453,5 +453,8 @@
 
 .theme-dark .error-area .newsletter-form .form-control {
   border: none;
+}
+.theme-dark .logo-large .text{
+  color: var(--secondary-color,	#ffffff);
 }
 /*# sourceMappingURL=theme-dark.css.map */
