@@ -160,7 +160,7 @@ jQuery(function($) {
         },
     });
 
-    // Back To Top
+    // Back To Top icon
     $('body').append(`<div class='go-top'><i class='envy envy-angle-up'></i></div>`);
     $(window).on('scroll', function() {
         var scrolled = $(window).scrollTop();

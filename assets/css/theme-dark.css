@@ -25,7 +25,7 @@
   right: 0;
   bottom: 0;
   background-color: transparent;
-  border: 1.5px solid #6610f2;
+  border: 1.5px solid #5579f1;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -103,7 +103,7 @@
 }
 
 .theme-dark h3 a:hover {
-  color: #6610f2 !important;
+  color: #5579f1 !important;
 }
 
 .theme-dark h2 a {
@@ -113,7 +113,7 @@
 }
 
 .theme-dark h2 a:hover {
-  color: #6610f2 !important;
+  color: #5579f1 !important;
 }
 
 .theme-dark a {
@@ -180,22 +180,22 @@
 
 .theme-dark .option.selected {
   color: #ffffff;
-  background-color: #6610f2;
+  background-color: #5579f1;
 }
 
 .theme-dark .option:hover {
   color: #ffffff;
-  background-color: #6610f2;
+  background-color: #5579f1;
 }
 
 .theme-dark .option.focus {
   color: #ffffff;
-  background-color: #6610f2;
+  background-color: #5579f1;
 }
 
 .theme-dark .option.selected.focus {
   color: #ffffff;
-  background-color: #6610f2;
+  background-color: #5579f1;
 }
 
 .theme-dark .select-box .nice-select .list {
@@ -219,11 +219,11 @@
 }
 
 .theme-dark .navbar-area .main-nav nav .navbar-nav .nav-item a.active {
-  color: #6610f2 !important;
+  color: #5579f1 !important;
 }
 
 .theme-dark .navbar-area .main-nav nav .navbar-nav .nav-item a:hover {
-  color: #6610f2 !important;
+  color: #5579f1 !important;
 }
 
 .theme-dark .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu {
@@ -235,11 +235,11 @@
 }
 
 .theme-dark .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
-  color: #6610f2 !important;
+  color: #5579f1 !important;
 }
 
 .theme-dark .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover {
-  color: #6610f2 !important;
+  color: #5579f1 !important;
 }
 
 .theme-dark .navbar-area.stickyadd .main-nav {
@@ -350,7 +350,7 @@
 }
 
 .theme-dark .blog-details-section .tags a:hover {
-  background-color: #6610f2;
+  background-color: #5579f1;
 }
 
 .theme-dark .blog-details-section .widget-area .widget-author {
@@ -396,7 +396,7 @@
 }
 
 .theme-dark .footer-area .footer-widget .footer-quick-links li a:hover {
-  color: #6610f2;
+  color: #5579f1;
 }
 
 .theme-dark .footer-area .footer-widget .contact-info p a {
@@ -406,7 +406,7 @@
 }
 
 .theme-dark .footer-area .footer-widget .contact-info p a:hover {
-  color: #6610f2;
+  color: #5579f1;
 }
 
 .theme-dark .copy-right-area {
