@@ -199,35 +199,35 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-sm-12">
-                        <form id="contactForm">
+                        <form id="contactForm"  method="post">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="name" class="form-control" id="name" required="" data-error="Please enter your name" placeholder="Name" />
+                                        <input type="text" name="Name" class="form-control" id="name" required="" data-error="Please enter your name" placeholder="Name" />
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <input type="email" name="email" class="form-control" id="email" required="" data-error="Please enter your email" placeholder="Email" />
+                                        <input type="email" name="Email" class="form-control" id="email" required="" data-error="Please enter your email" placeholder="Email" />
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <input type="number" name="phone" class="form-control" id="phone" required="" data-error="Please enter your phone number" placeholder="Phone" />
+                                        <input type="number" name="Phone" class="form-control" id="phone" required="" data-error="Please enter your phone number" placeholder="Phone" />
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="subject" class="form-control" id="subject" required="" data-error="Please enter your subject" placeholder="Subject" />
+                                        <input type="text" name="Subject" class="form-control" id="subject" data-error="Please enter your subject" placeholder="Subject" />
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <textarea name="message" id="message" class="form-control" cols="30" rows="6" required="" data-error="Please enter your message" placeholder="Message..."></textarea>
+                                        <textarea name="Message" id="message" class="form-control" cols="30" rows="6" required="" data-error="Please enter your message" placeholder="Message..."></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -442,6 +442,24 @@
         <script src="assets/js/jquery.ajaxchimp.min.js"></script>
         <!-- main JS -->
         <script src="assets/js/main.js"></script>
+        <script>
+            const scriptURL = "https://script.google.com/macros/s/AKfycbwn772J6nSWZW92v-StnUXeK_G4N9Z1EdbrmGjn-FzqBaOAVVgDmXwRngJsDWEVRuj34Q/exec";
+            const form = document.forms["contactForm"];
+            form.addEventListener("submit", e => {
+                e.preventDefault()
+                fetch(scriptURL, {method: "POST", body: new FormData(form)})
+                .then(res => {
+                    alert("Message sent successfully!");
+                    document.getElementById("msgSubmit").textContent = "Message sent successfully!";
+                    document.getElementById("contactForm").reset();
+                })
+                .catch(error => {
+                    console.error("FAILED...", error);
+                    document.getElementById("msgSubmit").textContent = "Message failed to send. Please try again later."
+                    alert("Message failed to send. Please try again later.");
+                })
+            })
+        </script>
       
     </body>
 </html>
