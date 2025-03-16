@@ -5407,3 +5407,11 @@ img {
   border-radius: 50%; /* Makes it a circle */
   object-fit: cover; /* Ensures it fills the space properly */
 }
+
+
+.video-style {
+  border: 5px solid #fffdfd;
+  padding: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
