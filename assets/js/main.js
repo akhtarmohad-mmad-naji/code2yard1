@@ -276,7 +276,7 @@ jQuery(function($) {
 
 }(jQuery));
 
-$('body').append("<div id='whatsapp'><a href='https://wa.me/919849459017/?text=Hi... I have a query'><img src='assets/img/whatsapp.png'></a> </div>")
+$('body').append("<div id='whatsapp'><a href='https://wa.me/919849459017/?text=Hi... I have a query'><img src='assets/img/whatsapp.png' alt='WhatsApp Chat'></a> </div>")
 
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
