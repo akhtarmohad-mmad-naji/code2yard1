@@ -5350,7 +5350,7 @@ img {
 
 /* */
 
-.h2_like_h1 {
+.h2_like_h {
   font-size: 46px; /* Match the font size of an h1 */
   font-weight: bold; /* h1 tags are usually bold */
   color: #000; /* Use a prominent color */
@@ -5358,7 +5358,7 @@ img {
   line-height: 1.2; /* Set appropriate line height for h1 look */
 }
 @media (max-width: 600px) {
-  .h2_like_h1 {
+  .h2_like_h {
     font-size: 18px; /* Match the font size of an h1 */
     font-weight: bold; /* h1 tags are usually bold */
     color: #000; /* Use a prominent color */
